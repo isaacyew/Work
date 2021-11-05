@@ -17,7 +17,7 @@ if %errorLevel% == 0 (
 )
 
 :run_powershell
-PowerShell.exe -NoProfile -Command "& {Start-Process PowerShell.exe -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%~dp0theJuice.ps1""' -Verb RunAs}"
+PowerShell.exe -NoProfile -Command "& {Start-Process PowerShell.exe -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""%~dp0main_script.ps1""' -Verb RunAs}"
 @echo.
 @echo Gathering Info... ...
 timeout 1 >nul
